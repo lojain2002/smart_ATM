@@ -1,0 +1,18 @@
+import Java.util.Scanner;
+public class squarTest
+{
+	public static void main(String[] args) {
+     Scanner key=new Scanner (System.in);
+		System.out.println("enter a number:");
+		double e =key.nextInt();
+		try{
+		    if (n<0) throw new Exception("can not calculate square root for negative numbers");
+		    double result = Math.sqrt(n);
+		    System.out.println("the square root of"+n+"="+result);
+		}
+		catch(Exception e){
+		    System.out.println(e.getMassage());
+		    System.exit(0);
+		}
+	}
+}
